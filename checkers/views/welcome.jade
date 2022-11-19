@@ -1,0 +1,17 @@
+extends layout
+  
+block content
+  head
+    script(type = 'text/javascript', src = '/javascripts/checkers.js')
+  
+  body
+    p Checkers   
+    input(type='button', id="create", value="Create Game")
+    input(type='button', id='join', value='Join Game')
+    input(type='text', id="username", placeholder="Username")
+    p(id="loading", text="")
+    p(id="turn", text="")
+    
+    div#gameDiv
+      table#game
+    
